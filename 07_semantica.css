@@ -1,10 +1,80 @@
 /* === LAYOUT COM FLEXBOX === */
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Inclui padding e border no tamanho */
 }
 
+body{
+    font-family:'Segoe UI',Takoma , Geneva, Verdana, sans-serif;
+    /* Habilita o recurso (Flex-box) */
+    display: flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+/* Estilo do Header (Cabeçalho) */
+.cabeçalho-principal {
+    background-color: linear-grandiet (90deg, rgb red, blue);
+    color: aliceblue;
+    padding: 20px;
+}
+.menu-principal ul{
+   display: flex; /*Deixa os links na vertical lado a lado*/
+   list-style: none; /*Retira a bolinha da lista */
+   gap: 20px; /*Espaçamento entre os itens*/
+   justify-content: center; /*Centralizar usando (Flex-Box)*/
+}
+.menu-principal a {
+    color: white;
+    text-decoration: none; /*Retira o traço*/
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.menu-principal a:houver {
+    background-color: rgb(255,255,255,0.2);
+    color: rgb(255,255,255,0.2);
+}
 
-/* Continuar digitação (Aqui)  */
+/* Estilo Main (Conteudo principal) */
+.cabeçalho-principal{
+    flex: 3; /*Ocupa 3/4 do espaço*/
+    padding: 20px;
+}
+.barra-lateral{
+    flex: 1; /*Ocupa 1/4 do espaço*/
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content; /*Altura ajustavel do conteúdo*/
+}
+
+/* Estilos articles */
+.secao-destaque,
+.artigo-blog,
+.secao-seviços {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 10px;
+}
+
+.artigo-blog header {
+    border-bottom: 2px solid rgb(87, 87, 255);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+time {
+    color: #7f8c8d;
+    font-style:italic;
+}
+/* Footer (Rodapé) */
+.rodape-principal{
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}

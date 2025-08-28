@@ -18,3 +18,9 @@ img:hover {
     border-color: blue;
     opacity: 0.3; /* Transparência */
 }
+
+.img-link {
+    width: 150px;
+    height: 50px;
+    object-fit: contain; /* Mantém a proporção da língua da iamgem */
+}

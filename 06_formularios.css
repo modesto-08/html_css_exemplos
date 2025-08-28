@@ -14,6 +14,80 @@ h1 {
 }
 
 /* Container do formulário */
+.formulario {
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgb(0,0,0,0.2);
+}
+label {
+    color: #333;
+    font-weight: bold;
+    /* Tranforma o elemento "Label" em um elemento inline com o (Spam ou <a>) mas com comportamento como block */
+    display: inline-block;
+    margin-bottom: 5px;
+}
+input[type="Text"]
+input[type="email"]
+input[type="password"]
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3;
+    /* Inclui padding (mantendo a largura) */
+    box-sizing: border-box;
+}
+/* Foco nos campos (focus) */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none; /* Remove a borda padrão */
+    border-color: #667eea;
+    background-color: #f8f9ff;
+}
+/* Radio e checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
 
+/* Permitir redimensionamneto somnente na vertical */
+textarea {
+    resize: vertical;
+}
+/* Estilos dos botões (Gerais) */
+button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all 0,3s;
+}
+/* Estilo de bortão enviar */
+.btn-enviar {
+    background-color: #27ae60;
+    color: #fff;
+}
+.btn-enviar:hover {
+    background-color: #20683e;
+    transform: translateY(-2px); /* Move para cima levemente */
+}
 
-/* Continuar digitação (Aqui) */
+/* Estilo de bortão limpar */
+.btn-limpar {
+    background-color: #e74c3c;
+    color: #fff;
+}
+.btn-limpar:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px); /* Move para cima levemente */
+}
